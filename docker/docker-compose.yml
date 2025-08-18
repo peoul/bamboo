@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: bamboo_postgres
+    environment:
+      - POSTGRES_DB=${DB_NAME:-bamboo_db}
+      - POSTGRES_USER=${DB_USER:-bamboo}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-dev_password_123}
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+
+
