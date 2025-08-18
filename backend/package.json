@@ -1,11 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "tsx --watch --env-file .env src/index.ts",
     "start": "node --env-file .env dist/index.js",
     "build": "tsc",
+    "clean": "rm -rf dist",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -13,26 +15,16 @@
     "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "imports": {
     "#*": "./src/*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "tsx": "^4.16.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
     "@tsconfig/node22": "^22.0.2",
     "@types/express": "^5.0.3",
-    "@types/node": "^24.3.0",
-    "eslint": "^9.33.0",
-    "eslint-plugin-perfectionist": "^4.15.0",
-    "prettier": "^3.6.2",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.40.0"
+    "@types/node": "^24.3.0"
   }
 }

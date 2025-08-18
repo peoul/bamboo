@@ -1,19 +1,37 @@
 {
-  "name": "bamboo",
+  "name": "bamboo-fullstack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Full-stack application with Express backend and React frontend",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently --kill-others-on-fail -n \"backend,frontend\" -c \"cyan,magenta\" \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "build:all": "npm run build --workspaces --if-present",
+    "start": "npm run start --workspace=backend",
+    "preview": "concurrently \"npm run start --workspace=backend\" \"npm run preview --workspace=frontend\"",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present",
+    "format:check": "npm run format:check --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "clean:deps": "rm -rf node_modules backend/node_modules frontend/node_modules",
+    "install:all": "npm install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/peoul/bamboo.git"
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/peoul/bamboo/issues"
-  },
-  "homepage": "https://github.com/peoul/bamboo#readme"
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
