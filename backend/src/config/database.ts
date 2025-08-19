@@ -22,3 +22,4 @@ export const testConnection = async() => {
         throw error
     }
 };
+
