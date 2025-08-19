@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "tsx --watch --env-file .env src/index.ts",
-    "start": "node --env-file .env dist/index.js",
+    "dev": "tsx --watch --env-file .env src/server.ts",
+    "start": "node --env-file .env dist/server.js",
     "build": "tsc",
     "clean": "rm -rf dist",
     "type-check": "tsc --noEmit",
@@ -19,12 +19,19 @@
     "#*": "./src/*"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "pg": "^8.16.3",
     "tsx": "^4.16.2"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/node": "^24.3.0"
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.3.0",
+    "@types/pg": "^8.15.5"
   }
 }
