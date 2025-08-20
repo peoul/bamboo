@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    flex-direction: row; 
+}
+
+.hero_title{
+    display: flex;
+    flex-direction: column;   
+}
+
+.hero svg{
+    width: 20rem;
+    height: 20rem;
+    fill: var(--text);
+}

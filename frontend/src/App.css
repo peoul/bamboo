@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-dark);    
+}
+
+/* Headers - Erode font */
+h1, h2, h3 {
+    font-family: 'Erode', serif;
+    letter-spacing: 0.02em;
+    color: var(--text); /* Added semicolon */
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 600; /* Semibold */
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Recia', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--text-muted); 
+}
+
+.body{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}

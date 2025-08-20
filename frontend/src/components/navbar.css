@@ -1,0 +1,29 @@
+.navbar{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button {
+    background: transparent;
+    border: none;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Erode', serif;
+}
+
+
+.navbar svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-muted);
+}
