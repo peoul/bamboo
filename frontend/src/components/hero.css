@@ -1,15 +1,109 @@
-.hero{
-    display: flex;
-    flex-direction: row; 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
 }
 
-.hero_title{
-    display: flex;
-    flex-direction: column;   
+.hero_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  gap: 1rem;
+  z-index: 2;
 }
 
-.hero svg{
-    width: 20rem;
-    height: 20rem;
-    fill: var(--text);
+.hero_title h1 {
+  font-size: 15rem;
+  margin: 0;
+}
+
+.hero_title p {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.hero_action {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.hero_action button {
+  background-color: var(--primary);
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.pen {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  width: 45rem; /* made it slightly bigger since it's background */
+  height: 45rem;
+  fill: var(--text);
+  opacity: 0.25; /* makes it subtle behind the text */
+  z-index: 1; /* puts SVG behind text */
+}
+
+.hero_action a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0px solid transparent;
+  background-color: var(--text);
+  opacity: 0.6;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.down {
+  width: 3rem;
+  height: 3rem;
+  stroke: var(--text-muted);
+}
+
+@media (max-width: 450px) {
+  .hero_title h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+
+  .pen {
+    width: 12rem; /* made it slightly bigger since it's background */
+    height: 12rem;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero_title p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .down {
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke: var(--text-muted);
+    stroke-width: 2px;
+  }
 }

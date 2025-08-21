@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-dark);    
@@ -15,7 +16,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 600; /* Semibold */
 }
 
@@ -44,5 +45,5 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 60vh;
 }

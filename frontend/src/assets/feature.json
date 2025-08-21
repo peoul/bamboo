@@ -1,0 +1,24 @@
+{
+  "features": [
+    {
+      "title": "Rich Editor",
+      "description": "Full-featured editor with formatting, tables, and media support."
+    },
+    {
+      "title": "Login & Access", 
+      "description": "Sign in to see all your notes across any device."
+    },
+    {
+      "title": "Share Anywhere",
+      "description": "Export as PDF or Markdown. Flexible like bamboo."
+    },
+    {
+      "title": "Folder View",
+      "description": "Organize like Windows Explorer. Drag, drop, and nest your notes in folders."
+    },
+    {
+      "title": "Dark & Light Mode",
+      "description": "Switch themes instantly. Easy on your eyes, day or night."
+    }
+  ]
+}

@@ -1,16 +1,19 @@
-import "./hero.css"
-import Pen from "../assets/bamboo_pen.svg?react"
+import "./hero.css";
+import Pen from "../assets/bamboo_pen.svg?react";
+import Down from "../assets/down.svg?react"
+import { Link } from "react-router";
 
 const HeroSection = () => {
   return (
     <div className="hero">
+      <Pen className="pen"/>
       <div className="hero_title">
         <h1>Bamboo</h1>
-              <p>A Note Taking App</p>
+        <p>Write with grace</p>
+        <div className="hero_action">
+          <a href="#feature_section"><Down className="down"/></a>
+        </div>
       </div>
-
-      <Pen/>
-
     </div>
   );
 };

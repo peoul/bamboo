@@ -1,10 +1,14 @@
-.navbar{
-    padding: 1rem;
-    margin: 1rem;
+.navbar {
+    padding: 2rem;
+    margin: 2rem 2rem 0 2rem; /* or just margin-bottom: 0 */
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: inherit; /* so it doesn't become transparent when sticky */
+    z-index: 100; /* ensures it stays above other content */
+    backdrop-filter: blur(10px);
 }
 
 .navbar button {
@@ -23,7 +27,22 @@
 
 
 .navbar svg{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     fill: var(--text-muted);
+}
+
+@media (max-width: 450px) {
+
+.navbar{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static
+}
+
+
 }

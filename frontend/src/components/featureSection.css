@@ -1,0 +1,24 @@
+.feature{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5rem;
+    width: 80vw;
+}
+
+.feature h2{
+    font-size: 3rem;
+}
+
+
+.feature_list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
