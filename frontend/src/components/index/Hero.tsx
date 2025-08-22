@@ -1,7 +1,7 @@
 import "./hero.css";
-import Pen from "../assets/bamboo_pen.svg?react";
-import Down from "../assets/down.svg?react"
-import { Link } from "react-router";
+import Pen from "../../assets/bamboo_pen.svg?react";
+import Down from "../../assets/down.svg?react"
+
 
 const HeroSection = () => {
   return (

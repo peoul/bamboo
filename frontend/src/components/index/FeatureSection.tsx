@@ -1,6 +1,6 @@
 import "./featureSection.css";
 
-import { features } from "../assets/feature.json";
+import { features } from "../../assets/feature.json";
 import FeaturedCard from "./FeatureCard";
 
 const FeatureSection = () => {
