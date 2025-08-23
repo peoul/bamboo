@@ -5,7 +5,7 @@ interface featuresProps {
   description: string;
 }
 
-const FeaturedCard = ({ title, description }: featuresProps) => {
+const FeaturedCard: React.FC<featuresProps>= ({ title, description }: featuresProps) => {
   return (
     <div className="featured_card">
       <div className="feature_content">

@@ -9,11 +9,11 @@
   border-radius: 1rem;
   padding: 0;
   flex-grow: 1 1 auto;
-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
-.featured_card:hover{
-    background: var(--gradient-hover);
+.featured_card:hover {
+  background: var(--gradient-hover);
 }
 
 .feature_binder {

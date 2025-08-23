@@ -1,6 +1,6 @@
-import Navbar from "../components/index/Navbar"
-import HeroSection from "../components/index/Hero"
-import FeatureSection from "../components/index/FeatureSection"
+import Navbar from "../components/Navbar"
+import HeroSection from "../components/app/Hero"
+import FeatureSection from "../components/app/FeatureSection"
 
 import './Main.css'
 

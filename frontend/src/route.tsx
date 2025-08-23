@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router";
-import Main from "./pages/Main";
+import App from "./pages/App";
+import GetStarted from "./pages/GetStarted";
 
 
 export const router = createBrowserRouter([
-    { path: "/", Component: Main}  
+    { path: "/", Component: App},
+    {path: "/get-started", Component: GetStarted}  
 ])

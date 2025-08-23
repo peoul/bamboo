@@ -3,7 +3,7 @@ import Pen from "../../assets/bamboo_pen.svg?react";
 import Down from "../../assets/down.svg?react"
 
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <div className="hero">
       <Pen className="pen"/>

@@ -39,7 +39,7 @@
   --success: hsl(156 68% 43%);
   --info: hsl(217 94% 69%);
   --border-card: 1px solid var(--border);
-  /* gradients */
+
   --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
   --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
   --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15)
